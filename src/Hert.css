@@ -1,0 +1,39 @@
+/* src/Heart.css */
+.heart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .heart {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .heart-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    stroke-width: 3.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: all 0.3s ease-out;
+  }
+  
+  .heart-svg.active {
+    transform: scale(1.2);
+    stroke: #FF385C;
+  }
+  
+  .double-click-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #2ecc71;
+    font-weight: bold;
+    text-align: center;
+  }
+  
